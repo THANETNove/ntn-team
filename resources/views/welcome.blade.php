@@ -47,7 +47,8 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm" style="position: fixed; width: 100%;">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 sticky-top shadow-sm"
+                style="position: fixed; width: 100%;">
                 <a href="" class="navbar-brand p-0">
                     <h1 class="m-0">NTNTEAM</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
@@ -69,7 +70,8 @@
 
 
                 </div>
-                <a href="manage/login.php" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">ระบบบัตรพนักงาน</a>
+                <a href="{{ route('login') }}"
+                    class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">ระบบบัตรพนักงาน</a>
         </div>
         </nav>
 
@@ -569,7 +571,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
-                    <p class="section-title text-white h5 mb-4" >photo<span></span></p>
+                    <p class="section-title text-white h5 mb-4">photo<span></span></p>
                     <div class="row g-2" style="   width: 250px;height: 200px;">
                         <div class="col-4">
                             <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
