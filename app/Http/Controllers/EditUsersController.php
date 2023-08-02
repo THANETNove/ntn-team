@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
+use Auth;
 
 class EditUsersController extends Controller
 {
@@ -15,7 +17,12 @@ class EditUsersController extends Controller
      */
     public function index()
     {
-        return view('edituser');
+
+        $user = DB::table('users')
+        ->where('id', Auth::user()->id)
+        ->get();
+     
+        return view('edituser',['user'=>$user]);
     }
 
     /**
